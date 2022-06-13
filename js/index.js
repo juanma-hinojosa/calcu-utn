@@ -5,6 +5,6 @@ const multi = document.getElementById("mul")
 
 suma = document.addEventListener(
     "click", () => {
-        alert("hola")
+        
     }
 )
