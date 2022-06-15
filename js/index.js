@@ -1,54 +1,46 @@
-// const suma = document.getElementById("sum")
-// const resta = document.getElementById("res")
-// const division = document.getElementById("div")
-// const multi = document.getElementById("mul")
 
+const suma = () =>{
+    let numUno = document.getElementById("numUno").value;
+    let numDos = document.getElementById("numDos").value;
 
-// const num1 = document.getElementById("num1").value;
-// const num2 = document.getElementById("num2").value;
+    if (numUno == "" || numDos == "") {
+        alert("Debes ingresar dos numeros");
+    } else {
+        let respuesta = parseInt(numUno) + parseInt(numDos);
+        document.getElementById("resultado").innerHTML = respuesta;
+    }
+}
 
-// suma = document.addEventListener(
-//     "click", () => {
+const resta = () =>{
+    const numUno = document.getElementById("numUno").value;
+    const numDos = document.getElementById("numDos").value;
 
-//     }
-// )
-
-function suma() {
-    const num1 = document.getElementById("num1").value;
-    const num2 = document.getElementById("num2").value;
-    if (num1 == "" || num2 == "") {
+    if (numUno == "" || numDos == "") {
         alert("Debes ingresar dos numeros")
     } else {
-        alert(`Resultado de la operacion entre ${num1} y ${num2} es  ${parseInt(num1) + parseInt(num2)}` );
+        let respuesta = parseInt(numUno) - parseInt(numDos);
+        document.getElementById("resultado").innerHTML = respuesta;
     } 
 }
 
-function resta() {
-    const num1 = document.getElementById("num1").value;
-    const num2 = document.getElementById("num2").value;
-    if (num1 == "" || num2 == "") {
+const division = () =>{
+    const numUno = document.getElementById("numUno").value;
+    const numDos = document.getElementById("numDos").value;
+    if (numUno == "" || numDos == "") {
         alert("Debes ingresar dos numeros")
     } else {
-        alert(`Resultado de la operacion entre ${num1} y ${num2} es  ${parseInt(num1) - parseInt(num2)}` );
+        let respuesta = parseInt(numUno) / parseInt(numDos);
+        document.getElementById("resultado").innerHTML = respuesta;
     } 
 }
 
-function division() {
-    const num1 = document.getElementById("num1").value;
-    const num2 = document.getElementById("num2").value;
-    if (num1 == "" || num2 == "") {
-        alert("Debes ingresar dos numeros")
+const multiplicacion = () =>{
+    const numUno = document.getElementById("numUno").value;
+    const numDos = document.getElementById("numDos").value;
+    if (numUno == "" || numDos == "") {
+        alert("Debes ingresar dos numeros");
     } else {
-        alert(`Resultado de la operacion entre ${num1} y ${num2} es  ${parseInt(num1) / parseInt(num2)}` );
-    } 
-}
-
-function multiplicacion() {
-    const num1 = document.getElementById("num1").value;
-    const num2 = document.getElementById("num2").value;
-    if (num1 == "" || num2 == "") {
-        alert("Debes ingresar dos numeros")
-    } else {
-        alert(`Resultado de la operacion entre ${num1} y ${num2} es  ${parseInt(num1) * parseInt(num2)}` );
+        let respuesta = parseInt(numUno) * parseInt(numDos);
+        document.getElementById("resultado").innerHTML = respuesta;
     } 
 }
